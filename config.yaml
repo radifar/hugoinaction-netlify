@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://radifar.github.io/hugoinaction-ga/
 languageCode: en-us
 title: My New Hugo Site
 theme: Eclectic
