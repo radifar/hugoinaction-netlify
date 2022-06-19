@@ -28,7 +28,7 @@ I am the third one. Even though there are two line breaks before me, this does n
 I have a line break before me.">
 <meta name=twitter:site content="@https://twitter.com/example">
 <meta name=twitter:creator content="@https://twitter.com/example">
-<script type=application/ld+json>{"headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/hugoinaction-ga/image/logo.min.svg"},"name":"Acme Corporation"},"author":{"@type":"Person","name":"Acme Corporation"},"description":"Markdown I am a paragraph in markdown with line wrapping so fit in this width. I am a continuation of the first paragraph as there is no empty line before me.\nI am in the second paragraph.\nI am the third one. Even though there are two line breaks before me, this does not create any newline characters. After me there are two spaces before the newline character.\nI have a line break before me.","name":"Acme Corporation","@type":"Article","wordCount":179,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/radifar.github.io\/hugoinaction-ga\/markdown\/"},"@context":"http://schema.org","url":"https://radifar.github.io/hugoinaction-ga/markdown/"}</script>
+<script type=application/ld+json>{"headline":"","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/hugoinaction-ga/image/logo.min.svg"},"name":"Acme Corporation"},"author":{"@type":"Person","name":"Acme Corporation"},"description":"Markdown I am a paragraph in markdown with line wrapping so fit in this width. I am a continuation of the first paragraph as there is no empty line before me.\nI am in the second paragraph.\nI am the third one. Even though there are two line breaks before me, this does not create any newline characters. After me there are two spaces before the newline character.\nI have a line break before me.","name":"Acme Corporation","@type":"Article","wordCount":426,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/radifar.github.io\/hugoinaction-ga\/markdown\/"},"@context":"http://schema.org","url":"https://radifar.github.io/hugoinaction-ga/markdown/"}</script>
 <link rel=preload href=/index.json as=fetch crossorigin importance=low>
 <link rel=stylesheet href=/hugoinaction-ga/css/index.min.61b84135a0b4766f9e40009031aa94f966f336a87275021759808ea7025322119a46f142f87bf160fa3937d8f91516cba554de8ba3234aa9fa6fd983b9f2fee8.css media=none onload="media!='all'&&(media='all')">
 <noscript>
@@ -146,6 +146,168 @@ Also a # tag.</p>
 </blockquote>
 <pre><code>Preformatted text
 </code></pre>
+<h2 id=inline-formatting>Inline formatting</h2>
+<p><em>Italics</em></p>
+<p><em>Italics</em></p>
+<p><strong>Bold</strong></p>
+<p><strong><em>Bold+Italics</em></strong></p>
+<p><strong><em>Bold+Italics</em></strong></p>
+<p>this_is_not_emphasis</p>
+<p><del>Strike-through</del></p>
+<p>Content with a &ndash; (dash) and a &mdash; (long dash).</p>
+<p><a href=http://link/path/to/target>link</a></p>
+<p><a href=http://link/path/to/target title="TITLE ON LINK">link</a></p>
+<p><a href=http://footnote.com>Shared links with footnotes</a></p>
+<p><a href=http://footnote.com>Second shared link</a></p>
+<p><a href=http://footnote.com>target 1</a></p>
+<p>Sample inline code <code>a++</code> can be specified here.</p>
+<p><img src=/path/to/image alt="Alt Text" title="Optional Tooltip"></p>
+<h2 id=html-escaped-characters-and-inline-html>HTML escaped characters and inline HTML</h2>
+<p>Copyright: ©</p>
+<p>Registered: ®</p>
+<p>Trademark: ™</p>
+<p>Less Than: &lt;</p>
+<p>Greater Than: ></p>
+<p>Ampersand: &</p>
+<p>Smiley: 😄</p>
+<p>Embedded HTML: x<sup>2</sup></p>
+<p>Floating image via HTML: <img src=/image/logo.png style="float:right;padding:0 0 0 10px"> Follow up text after the image. This honors the floats and wraps around the image, automatically going into the next line.</p>
+<h2 id=tables-code-blocks-and-task-lists>Tables, code blocks and task lists</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alex</td>
+<td>Web Developer</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>Sys Admin</td>
+</tr>
+<tr>
+<td>Gabby</td>
+<td>Technical Writer</td>
+</tr>
+</tbody>
+</table>
+<h3 id=alternate-table>Alternate table</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Mantra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alex</td>
+<td>There must be a better way.</td>
+</tr>
+<tr>
+<td>Bob</td>
+<td>Play it safe.</td>
+</tr>
+<tr>
+<td>Gabby</td>
+<td>Try everything, but do what you like.</td>
+</tr>
+</tbody>
+</table>
+<h3 id=table-alignment>Table alignment</h3>
+<table>
+<thead>
+<tr>
+<th style=text-align:right>Index</th>
+<th style=text-align:left>Product</th>
+<th style=text-align:center>Edges</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:right>1.</td>
+<td style=text-align:left>Circle</td>
+<td style=text-align:center>0</td>
+</tr>
+<tr>
+<td style=text-align:right>2.</td>
+<td style=text-align:left>Line</td>
+<td style=text-align:center>1</td>
+</tr>
+<tr>
+<td style=text-align:right>3.</td>
+<td style=text-align:left>Square</td>
+<td style=text-align:center>4</td>
+</tr>
+</tbody>
+</table>
+<h2 id=acme-website-task-list>Acme website task list</h2>
+<ul>
+<li><input checked disabled type=checkbox> Get the home page up</li>
+<li><input checked disabled type=checkbox> Update Privacy Policy and Terms of Use</li>
+<li><input disabled type=checkbox> Add the about page</li>
+<li><input disabled type=checkbox> Start the blog</li>
+<li><input disabled type=checkbox> Enable contact us</li>
+</ul>
+<h2 id=code-block>Code block</h2>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">1
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">2
+</span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>var</span> <span style=color:#a6e22e>x</span><span style=color:#f92672>=</span> <span style=color:#ae81ff>10</span>;
+<span style=color:#a6e22e>x</span><span style=color:#f92672>++</span>;
+<span style=color:#a6e22e>console</span>.<span style=color:#a6e22e>log</span>(<span style=color:#a6e22e>x</span>);
+</code></pre></td></tr></table>
+</div>
+</div><p>With highlighting:</p>
+<div class=highlight><div style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4>
+<table style=border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block><tr><td style=vertical-align:top;padding:0;margin:0;border:0>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">199
+</span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">200
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">201
+</span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">202
+</span></span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">203
+</span></span><span style=display:block;width:100%;background-color:#3c3d38><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">204
+</span></span><span style="margin-right:.4em;padding:0 .4em;color:#7f7f7f">205
+</span></code></pre></td>
+<td style=vertical-align:top;padding:0;margin:0;border:0;width:100%>
+<pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-javascript data-lang=javascript><span style=color:#66d9ef>while</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>success</span>) {
+<span style=display:block;width:100%;background-color:#3c3d38>  <span style=color:#a6e22e>tryAgain</span>();
+</span>  <span style=color:#a6e22e>attempt</span><span style=color:#f92672>++</span>;
+<span style=display:block;width:100%;background-color:#3c3d38>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>Dead</span>) {
+</span><span style=display:block;width:100%;background-color:#3c3d38>    <span style=color:#66d9ef>break</span>;
+</span><span style=display:block;width:100%;background-color:#3c3d38>  }
+</span>}
+</code></pre></td></tr></table>
+</div>
+</div><h2 id=direct-emojis>Direct Emojis</h2>
+<p>Smile please 😄</p>
+<p>I ❤️ Hugo</p>
+<p>Wink 😉</p>
+<p>A link to <a href=#direct-emojis>Emojis</a></p>
+<h2 id=smart-conversion>Smart conversion</h2>
+<p>This will convert to a dash &ndash;</p>
+<p>This is followed by ellipses &mldr;</p>
+<h2 style=background:#ff0 id=this-is-extra-highlighted>This is extra highlighted</h2>
+<h2 id=definition-lists>Definition Lists</h2>
+<dl>
+<dt>Alex</dt>
+<dd>Hippy Web Developer</dd>
+<dd>Technophile</dd>
+<dt>Bob</dt>
+<dd>Classic SysAdmin</dd>
+<dd>Conservative</dd>
+<dt>Gabby</dt>
+<dd>Cool Content Master</dd>
+<dd>Cautious</dd>
+</dl>
 </article>
 </section>
 <footer><div class="items-3 items"><section>
@@ -185,7 +347,7 @@ Contact Us
 </ul>
 </section>
 </div><div id=copyright>Copyright © 2022 Acme Corporation. All Rights Reserved. Last Updated -
-<time datetime=2022-06-18T12:08:26Z>Saturday, Jun 18, 2022.</time> <br>
+<time datetime=2022-06-19T01:28:29Z>Sunday, Jun 19, 2022.</time> <br>
 Themed using <a href>Eclectic</a> by <a href=https://atishay.me>Atishay</a>
 </div>
 </footer>
