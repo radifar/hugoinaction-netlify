@@ -8,6 +8,25 @@
     <title>{{$.Title}}</title>
   </head>
   <body class="home">
+    <header>
+      <a href="{{ site.BaseURL | relLangURL }}">
+        <img src="./image/logo.svg" alt="Acme Logo" 
+             height="36" width="48" />
+        Acme Corporation
+      </a>
+      {{with site.Menus.main }}
+        <nav>
+          <button class="hamburger">&#9776;</button>
+          <ul>
+            {{range .}}
+              <li>
+                <a href="{{.URL}}">{{.Name | humanize}}</a>
+              </li>
+            {{end}}
+          </ul>
+        </nav>
+      {{end}}
+    </header>
     <section id="intro">
       <img src="./image/logo.svg" alt="Acme Logo" width="64"/>
       <h1>{{$.Title}}</h1>
