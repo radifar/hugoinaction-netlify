@@ -18,6 +18,26 @@
     <section id="description">
       {{.Content}}
     </section>
+    {{with site.Menus.main }}
+      <section id="menu">
+      <h1>Website sections</h1>
+        <h2>This website has these major areas</h2>
+        <ul>
+          {{ range . }}
+          <li>
+            <a href="{{.URL}}">
+              <i class="icon-{{.Identifier}}"></i>
+              {{.Name | humanize}}
+            </a>
+            {{with .Post}}<p>{{.}}</p>{{end}}
+          </li>
+          {{ else }}
+          {{/* Log for the website editor/developer */}}
+          <!-- No menu entries present -->
+          {{end}}
+        </ul>
+      </section>
+    {{end}}
     <footer>
         <a href="./about">About Us</a>
         <a href="./privacy">Privacy Policy</a>
