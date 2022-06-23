@@ -34,7 +34,7 @@
       <a href="{{ref . (.Param "explore")}}"
       >Explore</a>
     </section>
-    {{with .Resources.GetMatch "products.csv"}}
+    {{with resources.GetMatch "products.csv"}}
     <section id="products">
       <h1>Our Products</h1>
       {{with . | transform.Unmarshal (dict "delimiter" ",")}}
